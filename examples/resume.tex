@@ -20,16 +20,21 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 \usepackage[UTF8]{ctex}
+%\usepackage[colorlinks,linkcolor=red]{hyperref}
+\usepackage{soul}
+\usepackage{color}
+\definecolor{yellow}{RGB}{255,102,0}
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
-
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+
+\colorlet{awesome}{awesome-orange}
+
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -41,7 +46,8 @@
 % \definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+% 这里是设置要不要高亮显示，不想显示就写false，想显示就true,上面配置哪个主题的高亮
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -52,16 +58,17 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
+%\photo[rectangle,edge,right]{./examples/profile}
 \name{}{侯江涛}
-\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+\position{Java开发工程师{\enskip\cdotp\enskip}}
+%\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\mobile{13027595769}
+\github{saveunhappy}
+\email{houjiangtaoay@foxmail.com}
+%\homepage{www.posquit0.com}
+
+%\linkedin{posquit0}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -73,7 +80,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
-\quote{``Be the change that you want to see in the world."}
+%\quote{``Be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
@@ -85,10 +92,10 @@
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Byungjin Park~~~·~~~Résumé}
-  {\thepage}
+%\makecvfooter
+%  {\today}
+%  {Byungjin Park~~~·~~~Résumé}
+%  {\thepage}
 
 
 %-------------------------------------------------------------------------------
@@ -96,13 +103,14 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
+\input{cv/skills.tex}
 \input{resume/experience.tex}
-\input{resume/honors.tex}
+%\input{resume/honors.tex}
 \input{resume/presentation.tex}
-\input{resume/writing.tex}
-\input{resume/committees.tex}
+%\input{resume/writing.tex}
+%\input{resume/committees.tex}
 \input{resume/education.tex}
-\input{resume/extracurricular.tex}
+%\input{resume/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
