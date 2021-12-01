@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0273163a-5ae1-4d89-96be-7883b2d08eb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/cv.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/cv.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/cv.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/examples/cv.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/cv.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/cv.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/cv/education.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/cv/education.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/cv/skills.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/cv/skills.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/resume.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/examples/resume.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/resume.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/resume/education.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/resume/education.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/resume/experience.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/resume/experience.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/resume/presentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/resume/presentation.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/resume/summary.tex" beforeDir="false" afterPath="$PROJECT_DIR$/examples/resume/summary.tex" afterDir="false" />
-    </list>
+    <list default="true" id="0273163a-5ae1-4d89-96be-7883b2d08eb1" name="Default Changelist" comment="关键字变橙色不再是背景高亮" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../devCode/Awesome-CV" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../闪马代码/ducha_platform_v1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
@@ -92,7 +77,16 @@
       <updated>1619412190134</updated>
       <workItem from="1619412193159" duration="1356000" />
       <workItem from="1634995627698" duration="96000" />
+      <workItem from="1634995901280" duration="231000" />
     </task>
+    <task id="LOCAL-00001" summary="关键字变橙色不再是背景高亮">
+      <created>1634995967132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634995967133</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -136,6 +130,21 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="关键字变橙色不再是背景高亮" />
+    <option name="LAST_COMMIT_MESSAGE" value="关键字变橙色不再是背景高亮" />
   </component>
   <component name="masterDetails">
     <states>

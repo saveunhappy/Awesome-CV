@@ -3,7 +3,6 @@
 %-------------------------------------------------------------------------------
 \cvsection{项目经历}
 
-
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
@@ -12,7 +11,7 @@
 	%---------------------------------------------------------
 	\cventry
 	{用户入口(点击查看): \url{http://o2o.hjtwebsite.top/o2o/frontend/index} \item 
-		店家入口(点击查看): \url{http://o2o.hjtwebsite.top/o2o/local/login?usertype=2}} % Role
+		店家入口(点击查看): \url{http://o2o.hjtwebsite.top/o2o/local/login}} % Role
 	{校园商铺O2O} % Event
 	{} % Location
 	{} % Date(s)
@@ -24,7 +23,6 @@
 			\item {使用图片开源工具\textcolor{yellow}{\textbf{Thumbnailator}}进行图片处理,验证码组件\textcolor{yellow}{\textbf{Kaptcha}}完成注册、登录功能,作业调度框架\textcolor{yellow}{\textbf{Quartz}}进行每日销量统计}
 		\end{cvitems}
 	}
-	
 	%---------------------------------------------------------
 	\cventry
 	{项目地址(点击查看):\url{http://wiki.hjtwebsite.top/}} % Role
@@ -58,6 +56,25 @@
 			\item {使用\textcolor{yellow}{\textbf{MinIO}}进行对象存储}
 		\end{cvitems}
 	}
-	
-	%---------------------------------------------------------
+	\cventry
+	{负责后端接口的编写} % Role
+	{自媒体平台} % Event
+	{} % Location
+	{} % Date(s)
+	{
+		\begin{cvitems} % Description(s)
+			\item {独立开发的\textcolor{yellow}{\textbf{SpringBoot}}+\textcolor{yellow}{\textbf{Vue2}}的具有门户平台+媒体中心+运营中心的自媒体平台,采用前后端分离架构}
+			\item {集成\textcolor{yellow}{\textbf{MyBatis}}和通用\textcolor{yellow}{\textbf{Mapper}}生成持久层代码,MyBatis分页插件\textcolor{yellow}{\textbf{PageHelper}}}
+			\item {集成腾讯云的短信服务完成一键登录注册功能,阿里云的\textcolor{yellow}{\textbf{OSS}}}进行用户头像保存，门户中心使用人脸识别进行登录以及AI文本检测对内容安全审核
+			\item {集成HTTP组件\textcolor{yellow}{\textbf{Axios}}与后端进行交互}
+			\item {通过后端校验框架\textcolor{yellow}{\textbf{Validation}}进行不同场景的参数校验}
+			\item {集成富文本框\textcolor{yellow}{\textbf{Summernote}},进行文章、图片以及视频的上传}
+			\item {对接分布式缓存\textcolor{yellow}{\textbf{Redis}},实现用户登录，登录校验，缓存用户信息，阅读数，点赞数，粉丝关注数等}
+			\item {使用SpringBoot定时任务进行文章定时发布,集成\textcolor{yellow}{\textbf{RabbitMQ}}进行解耦避免定时任务的全表扫描,\textcolor{yellow}{\textbf{ECharts}}完成展示男女粉丝比例以及地域信息}	
+			\item {集成\textcolor{yellow}{\textbf{MongoDB}}来保存友情链接，\textcolor{yellow}{\textbf{GridFS}}保存用户人脸信息}
+			\item {集成\textcolor{yellow}{\textbf{Freemarker}}详情页数据静态化,将文件上传到\textcolor{yellow}{\textbf{GridFS}}}
+			\item
+			{集成\textcolor{yellow}{\textbf{SpringCloud}}组件,\textcolor{yellow}{\textbf{Ribbon+Feign}}负载均衡,\textcolor{yellow}{\textbf{Zuul}}配置网关,\textcolor{yellow}{\textbf{Config+Bus}}统一配置中心}
+		\end{cvitems}
+	}
 \end{cventries}
