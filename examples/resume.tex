@@ -18,7 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
 \usepackage[UTF8]{ctex}
 %\usepackage[colorlinks,linkcolor=red]{hyperref}
 \usepackage{soul}
@@ -48,11 +48,13 @@
 % Set false if you don't want to highlight section with awesome color
 % 这里是设置要不要高亮显示，不想显示就写false，想显示就true,上面配置哪个主题的高亮
 \setbool{acvSectionColorHighlight}{false}
-
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
-
+%工作经历，职位那边写的要不就纯大写了
+\renewcommand{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{graytext} #1}}
+%设置排版间距大小
+%\renewcommand{\normalsize}{\fontsize{12}{12}\selectfont}
+%\newcommand*{\letteropeningstyle}[1]{{\fontsize{15pt}{1em}\bodyfontlight\bfseries\color{black} #1}}
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
@@ -60,7 +62,8 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 %\photo[rectangle,edge,right]{./examples/profile}
 \name{}{侯江涛}
-\position{J\lowercase{ava}开发工程师{\enskip\cdotp\enskip}}
+%这个就是要不要显示你的职位，橙色的
+\position{{\enskip\cdotp\enskip}}
 %\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
 \mobile{13027595769}
@@ -103,13 +106,19 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
-\input{cv/skills.tex}
+%\input{cv/skills.tex}
+\input{resume/experienceToSkill.tex}
 \input{resume/experience.tex}
 %\input{resume/honors.tex}
+%\input{resume/presentation2.tex}
 \input{resume/presentation.tex}
+
 %\input{resume/writing.tex}
 %\input{resume/committees.tex}
+\input{resume/otherUrl.tex}
 \input{resume/education.tex}
+
+%\input{resume/presentation2.tex}
 %\input{resume/extracurricular.tex}
 
 

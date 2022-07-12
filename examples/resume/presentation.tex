@@ -7,64 +7,68 @@
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
-	
-	%---------------------------------------------------------
 	\cventry
-	{用户入口(点击查看): \url{http://o2o.hjtwebsite.top/o2o/frontend/index} \item 
-		店家入口(点击查看): \url{http://o2o.hjtwebsite.top/o2o/local/login}} % Role
-	{校园商铺O2O} % Event
+	{} % Role
+	{在线视频课程系统} % Event
 	{} % Location
 	{} % Date(s)
 	{
 		\begin{cvitems} % Description(s)
-			\item {独立开发的基于\textcolor{yellow}{\textbf{SSM}}技术栈的校园商铺平台,前端使用\textcolor{yellow}{\textbf{SUI Mobile}}UI库进行快速搭建}
-			\item {为加快迭代速度,后端由SSM迁移至\textcolor{yellow}{\textbf{SpringBoot}}}
-			\item {为了提升业务系统性能,优化用户体验,\textcolor{yellow}{\textbf{MySQL}}进行主从同步配置,项目读写分离,引入\textcolor{yellow}{\textbf{Redis}}缓存加快了请求响应速度}
-			\item {使用图片开源工具\textcolor{yellow}{\textbf{Thumbnailator}}进行图片处理,验证码组件\textcolor{yellow}{\textbf{Kaptcha}}完成注册、登录功能,作业调度框架\textcolor{yellow}{\textbf{Quartz}}进行每日销量统计}
+			\item {基于\textcolor{yellow}{\textbf{Spring Cloud}}+\textcolor{yellow}{\textbf{Vue}}的在线视频课程系统,采用前后端分离架构并且使用\textcolor{yellow}{\textbf{Docker Compose}}进行部署开发}
+			\item {集成\textcolor{yellow}{\textbf{MyBatis Generator}}生成生成持久层代码，并且经过拓展使用\textcolor{yellow}{\textbf{FreeMarker}}模板语言做出通用的代码生成器，可以一键生成Controller、Service、Dao、前端界面以及枚举}
+			\item {使用\textcolor{yellow}{\textbf{Eureka}}进行服务注册与发现，{使用\textcolor{yellow}{\textbf{Gateway}}作为网关进行对接口的统一处理}
+				\item 在项目中经过不断的重构将通用的功能做成组件，例如:分页组件、文件上传组件、视频播放组件、富文本框}
+			\item {在文件上传模块，完成了\textcolor{yellow}{\textbf{分片上传}}以及\textcolor{yellow}{\textbf{极速秒传}}，大大节省了上传文件的时间，最后使用阿里云的OSS进行存储}
+			\item {在视频播放模块，使用了阿里云的视频点播服务，对视频进行加密处理}
+			\item {在通用权限设计模块没有使用权限框架，而是自己从零实现了一个权限控制模块，有利于自定义的一些拓展}
+			\item {基于\textcolor{yellow}{\textbf{Redis}},实现用户的单端登录及登录校验}
 		\end{cvitems}
 	}
 	%---------------------------------------------------------
+	
 	\cventry
-	{项目地址(点击查看):\url{http://wiki.hjtwebsite.top/}} % Role
+	{} % Role
+	{美食社交} % Event
+	{} % Location
+	{} % Date(s)
+	{
+		\begin{cvitems} % Description(s)
+			\item {独立开发的后端基于\textcolor{yellow}{\textbf{SpringBoot}}技术栈的美食社交APP}
+			\item {使用\textcolor{yellow}{\textbf{Spring Security+OAuth2}}搭建用户认证中心}
+			\item {在扣库存时发生超卖现象使用\textcolor{yellow}{\textbf{Redis+Lua}}解决超卖问题}
+			\item {多线程抢购时会发生一人多单问题,初始还是使用Redis+Lua解决问题后期改为使用\textcolor{yellow}{\textbf{Radisson}}作为分布式锁解决一人多单问题}
+			\item {用户关注会推送消息,类似朋友圈,根据时间排序使用\textcolor{yellow}{\textbf{Sorted Set}}实现Feed流功能}
+			\item {用户签到如果使用传统数据库MySQL占用的资源太多使用高阶数据类型\textcolor{yellow}{\textbf{Bitmap}}完成用户签到功能}
+		\end{cvitems}
+	}
+	\cventry
+	{} % Role
 	{wiki知识库系统} % Event
 	{} % Location
 	{} % Date(s)
 	{
 		\begin{cvitems} % Description(s)
-			\item {独立开发的\textcolor{yellow}{\textbf{SpringBoot}}+\textcolor{yellow}{\textbf{Vue3}}的知识库系统,采用前后端分离架构}
+			\item {独立开发的\textcolor{yellow}{\textbf{SpringBoot}}+\textcolor{yellow}{\textbf{Vue}}的知识库系统,采用前后端分离架构}
 			\item {集成\textcolor{yellow}{\textbf{MyBatis}}及其官方代码生成器\textcolor{yellow}{\textbf{MyBatis Generator}}生成持久层代码,MyBatis分页插件\textcolor{yellow}{\textbf{PageHelper}}}
 			\item {集成支持Vue3的UI组件库\textcolor{yellow}{\textbf{Ant Design Vue}},完成网站页面基本布局,提高了开发效率,减少了\textcolor{yellow}{\textbf{50\%}}的开发时间}
-			\item {集成HTTP组件\textcolor{yellow}{\textbf{Axios}},解决前后端分离架构中常见的问题,如跨域、参数传递、多环境配置等}
 			\item {使用IDEA的HTTP Client进行RESTful API进行接口测试,通过后端校验框架\textcolor{yellow}{\textbf{Validation}}进行参数校验}
 			\item {集成轻量级富文本框\textcolor{yellow}{\textbf{wangEditor}},支持在知识库中插入图片、视频等}
 			\item {对接分布式缓存\textcolor{yellow}{\textbf{Redis}},实现用户登录及登录校验}
 			\item {使用SpringBoot定时任务进行定时统计,集成\textcolor{yellow}{\textbf{WebSocket}}完成网站通知，增加数据统计并集成报表组件\textcolor{yellow}{\textbf{ECharts}}完成相关报表展示，丰富首页内容,最后通过\textcolor{yellow}{\textbf{Nginx}}发布项目}
 		\end{cvitems}
 	}
-	%------------------------------------------------------
+	%---------------------------------------------------------
+
+	%---------------------------------------------------------
 	\cventry
-	{负责后端接口的编写} % Role
-	{智慧督察系统} % Event
-	{} % Location
-	{} % Date(s)
-	{
-		\begin{cvitems} % Description(s)
-			\item {基于\textcolor{yellow}{\textbf{SpringBoot}}+\textcolor{yellow}{\textbf{React}}的智慧督察系统,采用前后端分离架构并且使用\textcolor{yellow}{\textbf{Docker Compose}}进行部署开发}
-			\item {集成\textcolor{yellow}{\textbf{MyBatis-Plus}}进行高效敏捷开发持久层代码}
-			\item {使用\textcolor{yellow}{\textbf{Swagger UI}}实现接口文档自动生成}
-			\item {\textcolor{yellow}{\textbf{Shiro}}和\textcolor{yellow}{\textbf{JWT}}进行用户校验和授权}
-			\item {使用\textcolor{yellow}{\textbf{MinIO}}进行对象存储}
-		\end{cvitems}
-	}
-	\cventry
-	{负责后端接口的编写} % Role
+	%---------------------------------------------------------
+	{该项目包含了门户平台、媒体中心、运营中心三大平台,主要包含用户模块、文件模块、文章模块、管理模块} % Role
 	{自媒体平台} % Event
 	{} % Location
 	{} % Date(s)
 	{
 		\begin{cvitems} % Description(s)
 			\item {独立开发的\textcolor{yellow}{\textbf{SpringBoot}}+\textcolor{yellow}{\textbf{Vue2}}的具有门户平台+媒体中心+运营中心的自媒体平台,采用前后端分离架构}
-			\item {集成\textcolor{yellow}{\textbf{MyBatis}}和通用\textcolor{yellow}{\textbf{Mapper}}生成持久层代码,MyBatis分页插件\textcolor{yellow}{\textbf{PageHelper}}}
 			\item {集成腾讯云的短信服务完成一键登录注册功能,阿里云的\textcolor{yellow}{\textbf{OSS}}}进行用户头像保存，门户中心使用人脸识别进行登录以及AI文本检测对内容安全审核
 			\item {集成HTTP组件\textcolor{yellow}{\textbf{Axios}}与后端进行交互}
 			\item {通过后端校验框架\textcolor{yellow}{\textbf{Validation}}进行不同场景的参数校验}
@@ -76,5 +80,5 @@
 			\item
 			{集成\textcolor{yellow}{\textbf{SpringCloud}}组件,\textcolor{yellow}{\textbf{Ribbon+Feign}}负载均衡,\textcolor{yellow}{\textbf{Zuul}}配置网关,\textcolor{yellow}{\textbf{Config+Bus}}统一配置中心}
 		\end{cvitems}
-	}
+	} 
 \end{cventries}
